@@ -1,0 +1,144 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  position: relative;
+
+  color: $neutral-900;
+
+  background-color: $neutral-100;
+
+  padding: 40px 20px;
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding-bottom: 20px;
+  }
+
+  .footer-section {
+    flex: 1;
+
+    min-width: 250px;
+
+    h3 {
+      font-size: 1.3rem;
+      color: $primary-main;
+
+      margin-bottom: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+
+      margin-top: 8px;
+
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        color: $neutral-900;
+
+        margin-bottom: 10px;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          color: $neutral-800;
+          text-decoration: none;
+
+          transition: color 0.3s;
+
+          &:hover {
+            color: $primary-main;
+          }
+        }
+      }
+    }
+  }
+
+  .redes-sociais ul {
+    display: flex;
+    gap: 15px;
+
+    li a {
+      display: inline-block;
+
+      font-size: 1.5rem;
+    }
+  }
+
+  .logo-politica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 150px;
+
+      margin-bottom: 15px;
+    }
+
+    a {
+      font-size: 0.9rem;
+      color: $neutral-900;
+      text-decoration: none;
+    }
+  }
+
+  .arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    color: $neutral-100;
+
+    background-color: $primary-main;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border: none;
+    border-radius: 50%;
+
+    padding: 10px;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-3px);
+
+      background-color: darken($primary-main, 10%);
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  .footer-copyright {
+    font-size: 0.875rem;
+    text-align: center;
+    color: $neutral-700;
+
+    border-top: 1px solid $neutral-500;
+
+    margin-top: 2.5rem;
+
+    padding-top: 1.5rem;
+  }
+}
