@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
-  color: $neutral-900;
+  position: relative;
 
   height: 80px;
 
@@ -32,8 +32,7 @@
       li {
         margin: 0 1rem;
 
-        a,
-        .nav-links a {
+        a {
           text-decoration: none;
           font-weight: 500;
           color: $neutral-700;
@@ -57,7 +56,7 @@
     .contact-button {
       font-size: 1rem;
       font-weight: 600;
-      color: #fff;
+      color: $surface;
 
       background-color: $primary-main;
 
@@ -72,6 +71,98 @@
 
       &:hover {
         background-color: darken($primary-main, 5%);
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+
+    color: $neutral-700;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    .nav {
+      .contact-button {
+        font-size: 0.9rem;
+
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      transform: translateX(100%);
+      top: 80px;
+      right: 0;
+
+      width: 60%;
+      height: calc(100vh - 80px);
+
+      background-color: $neutral-100;
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+
+      transition: transform 0.3s ease;
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
+
+        li {
+          margin: 1rem 0;
+        }
+      }
+
+      .contact-button {
+        margin-top: 1rem;
+      }
+    }
+
+    .menu-toggle {
+      display: block;
+
+      z-index: 10;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem 1rem;
+
+    img {
+      max-height: 50px;
+    }
+
+    .nav {
+      .nav-links li {
+        margin: 0.5rem 0;
+      }
+
+      .contact-button {
+        font-size: 0.8rem;
+
+        padding: 0.4rem 1rem;
       }
     }
   }
