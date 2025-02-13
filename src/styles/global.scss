@@ -1,10 +1,11 @@
-// _global.scss
 @import './variables.scss';
 
 body {
   font-family: 'Inter', sans-serif;
   color: $neutral-main;
   line-height: 1.6;
+
+  overflow-x: hidden;
 }
 
 h1,
