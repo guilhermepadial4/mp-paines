@@ -5,6 +5,7 @@ import { FiArrowUp, FiFacebook, FiInstagram, FiMail, FiMapPin, FiPhone } from 'r
 import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/logo.png';
+import SecureSite from '../../assets/secure-site.png';
 
 export function Footer() {
   const scrollToTop = () => {
@@ -16,26 +17,31 @@ export function Footer() {
       <div className="footer-content">
         <div className="footer-section atendimento">
           <h3>Atendimento</h3>
-          <p>Segunda a Sexta: 08:00 - 18:00</p>
+          <p>Seg a Sex: 08:00 - 18:00</p>
           <ul>
             <li>
               <a href="#">
-                <FiPhone size={20} /> (11) 1234-5678
+                <FiPhone size={20} /> (11) 2726-0281
               </a>
             </li>
             <li>
               <a href="#">
-                <FaWhatsapp size={20} /> (11) 98765-4321
+                <FiPhone size={20} /> (11) 2726-0215
               </a>
             </li>
             <li>
               <a href="#">
-                <FiMail size={20} /> contato@mppaineis.com.br
+                <FaWhatsapp size={20} /> (11) 2722-4916
               </a>
             </li>
             <li>
               <a href="#">
-                <FiMapPin size={20} /> Rua Exemplo, 123 - São Paulo, SP
+                <FiMail size={20} /> vendas@mppaineis.com.br
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FiMapPin size={20} /> Rua Vargas, 108 - Cumbica, Guarulhos, SP
               </a>
             </li>
           </ul>
@@ -46,12 +52,12 @@ export function Footer() {
           <ul>
             <li>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FiInstagram size={20} />
+                <FiInstagram size={25} />
               </a>
             </li>
             <li>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FiFacebook size={20} />
+                <FiFacebook size={25} />
               </a>
             </li>
           </ul>
@@ -60,6 +66,7 @@ export function Footer() {
         <div className="footer-section logo-politica">
           <img src={Logo} alt="Logo da Empresa MP Painéis" />
           <Link to="/politica-de-privacidade">Política de Privacidade</Link>
+          <img className="secure-site" src={SecureSite} alt="Selo de Site Seguro" />
         </div>
       </div>
 
