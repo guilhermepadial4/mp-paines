@@ -46,7 +46,6 @@
       li {
         display: flex;
         align-items: center;
-
         color: $neutral-900;
 
         margin-bottom: 10px;
@@ -95,6 +94,7 @@
 
     .secure-site {
       max-width: 200px;
+
       padding-top: 30px;
     }
 
@@ -145,5 +145,62 @@
     margin-top: 2.5rem;
 
     padding-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 20px;
+
+      padding: 20px;
+    }
+
+    .footer-section {
+      text-align: center;
+
+      min-width: 100%;
+
+      ul {
+        justify-items: center;
+      }
+    }
+
+    .redes-sociais ul {
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .logo-politica img {
+      max-width: 120px;
+    }
+
+    .arrow-up {
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .footer-copyright {
+      font-size: 0.75rem;
+
+      padding-top: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-content {
+      gap: 15px;
+    }
+
+    .footer-section h3 {
+      font-size: 1.1rem;
+    }
+
+    .redes-sociais ul li a {
+      font-size: 1.2rem;
+    }
+
+    .logo-politica a {
+      font-size: 0.8rem;
+    }
   }
 }
