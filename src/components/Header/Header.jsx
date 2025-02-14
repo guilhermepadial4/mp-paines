@@ -17,7 +17,9 @@ export function Header() {
 
   return (
     <header className="header">
-      <img src={Logo} alt="Logo da Empresa MP Painéis" />
+      <Link to="/">
+        <img src={Logo} alt="Logo da Empresa MP Painéis" />
+      </Link>
 
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
         <ul className="nav-links">
@@ -42,7 +44,13 @@ export function Header() {
             </Link>
           </li>
         </ul>
-        <button className="contact-button">Fale Conosco</button>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5511973040054&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="contact-button">Fale Conosco</button>
+        </a>
       </nav>
 
       <button className="menu-toggle" onClick={toggleMenu}>
