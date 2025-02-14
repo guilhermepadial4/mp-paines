@@ -95,8 +95,128 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .location-title {
+    font-size: 2.2rem;
+  }
+
+  .location-description {
+    font-size: 1.15rem;
+  }
+
+  .location-map {
+    height: 400px;
+  }
+
+  .location-info {
+    padding: 15px;
+  }
+
+  .location-info h4 {
+    font-size: 1.3rem;
+  }
+
+  .location-info p {
+    font-size: 0.95rem;
+  }
+
+  .btn-directions {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .location-title {
+    font-size: 2rem;
+  }
+
+  .location-description {
+    font-size: 1.1rem;
+  }
+
+  .location-map {
+    height: 350px;
+  }
+
+  .location-info {
+    padding: 10px;
+  }
+
+  .location-info h4 {
+    font-size: 1.2rem;
+  }
+
+  .location-info p {
+    font-size: 0.9rem;
+  }
+
+  .btn-directions {
+    padding: 7px 15px;
+  }
+}
+
 @media (max-width: 768px) {
+  .location {
+    padding: 20px 15px;
+  }
+
+  .location-title {
+    font-size: 1.8rem;
+  }
+
+  .location-description {
+    font-size: 1rem;
+  }
+
+  .location-map {
+    height: 300px;
+  }
+
   .location-info {
     text-align: center;
+
+    padding: 10px;
+  }
+
+  .location-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .location-info p {
+    font-size: 0.85rem;
+  }
+
+  .btn-directions {
+    font-size: 0.9rem;
+
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .location-title {
+    font-size: 1.6rem;
+  }
+
+  .location-description {
+    font-size: 0.95rem;
+  }
+
+  .location-map {
+    height: 250px;
+  }
+
+  .location-info h4 {
+    font-size: 1rem;
+  }
+
+  .location-info p {
+    font-size: 0.8rem;
+  }
+
+  .btn-directions {
+    font-size: 0.85rem;
+
+    padding: 5px 10px;
   }
 }

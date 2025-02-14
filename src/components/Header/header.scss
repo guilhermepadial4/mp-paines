@@ -103,25 +103,23 @@
 @media (max-width: 768px) {
   .header {
     .nav {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      width: 60%;
+      height: calc(100vh - 80px);
+      background-color: $neutral-100;
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+      transition: right 0.3s ease;
+      z-index: 5;
+
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      position: absolute;
-      transform: translateX(100%);
-      top: 80px;
-      right: 0;
-
-      width: 60%;
-      height: calc(100vh - 80px);
-
-      background-color: $neutral-100;
-      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
-
-      transition: transform 0.3s ease;
-
       &.open {
-        transform: translateX(0);
+        right: 0;
       }
 
       .nav-links {
@@ -140,11 +138,11 @@
 
     .menu-toggle {
       display: block;
-
       z-index: 10;
     }
   }
 }
+
 
 @media (max-width: 480px) {
   .header {

@@ -1,9 +1,10 @@
 import './Footer.scss';
 
 import { FaWhatsapp } from 'react-icons/fa';
-import { FiArrowUp, FiFacebook, FiInstagram, FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
+import { FiFacebook, FiInstagram, FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
+import ArrowUnder from '../../assets/arrow_under.svg';
 import Logo from '../../assets/logo.png';
 import SecureSite from '../../assets/secure-site.png';
 
@@ -78,13 +79,13 @@ export function Footer() {
         </div>
       </div>
 
+      <button className="arrow-up" onClick={scrollToTop} aria-label="Voltar ao topo">
+        <img src={ArrowUnder} alt="Voltar ao topo" className="arrow-icon" />
+      </button>
+
       <div className="footer-copyright">
         <p>&copy; {new Date().getFullYear()} MP Painéis. Todos os direitos reservados. By RastaIT</p>
       </div>
-
-      <button className="arrow-up" onClick={scrollToTop} aria-label="Voltar ao topo">
-        <FiArrowUp size={30} />
-      </button>
     </footer>
   );
 }

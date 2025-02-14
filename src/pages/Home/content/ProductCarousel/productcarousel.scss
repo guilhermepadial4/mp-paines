@@ -31,8 +31,9 @@
 }
 
 .product-image {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
 
   object-fit: cover;
 
@@ -51,8 +52,6 @@
 .btn {
   color: $neutral-100;
 
-  padding: 10px 20px;
-
   background-color: $primary-main;
 
   border: none;
@@ -60,9 +59,12 @@
 
   margin-top: 15px;
 
+  padding: 10px 20px;
+
   cursor: pointer;
 
   transition: background-color 0.3s ease;
+
   &:hover {
     background-color: $primary-500;
   }
@@ -73,5 +75,69 @@
 
   li button:before {
     color: $primary-600;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-card {
+    margin: 0 15px;
+
+    padding: 15px;
+  }
+
+  .product-image {
+    max-width: 200px;
+  }
+
+  .product-description {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-carousel {
+    padding: 0 10px;
+  }
+
+  .product-card {
+    margin: 0 10px;
+
+    padding: 10px;
+  }
+
+  .product-image {
+    max-width: 180px;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-image {
+    max-width: 150px;
+  }
+
+  .product-description {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+
+    padding: 5px 10px;
   }
 }
