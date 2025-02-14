@@ -1,4 +1,4 @@
-import './ProductCarousel.scss';
+import './productCarousel.scss';
 
 import Slider from 'react-slick';
 
