@@ -1,0 +1,183 @@
+@import '../../../styles/variables.scss';
+
+.contact-page {
+  text-align: center;
+
+  background-color: $background-light;
+
+  padding: 40px 20px;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-main;
+
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $neutral-900;
+
+    margin-bottom: 40px;
+  }
+
+  .contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+
+    .contact-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: $surface;
+
+      width: 250px;
+
+      background-color: $primary-main;
+
+      border-radius: 10px;
+
+      padding: 15px 20px;
+
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: darken($primary-main, 5%);
+      }
+
+      svg {
+        font-size: 2rem;
+      }
+
+      span {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $neutral-100;
+
+        margin: 5px 0 0;
+      }
+    }
+  }
+
+  .map-container {
+    max-width: 800px;
+    width: 100%;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-page {
+    padding: 30px 15px;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .contact-buttons .contact-button {
+      width: 220px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-page {
+    .contact-buttons {
+      gap: 15px;
+    }
+
+    .contact-buttons .contact-button {
+      width: 200px;
+
+      padding: 12px 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .contact-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .contact-buttons .contact-button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 20px 10px;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .contact-buttons {
+      align-items: center;
+    }
+
+    .contact-buttons .contact-button {
+      width: 100%;
+      max-width: 280px;
+
+      padding: 10px 15px;
+
+      svg {
+        font-size: 1.8rem;
+      }
+
+      span {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .map-container {
+      max-width: 100%;
+    }
+  }
+}
