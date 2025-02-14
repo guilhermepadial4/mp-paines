@@ -51,7 +51,7 @@
       transition: background 0.3s;
 
       &:hover {
-        background-color: darken($primary-main, 5%);
+        background-color: $primary-600;
       }
 
       svg {
