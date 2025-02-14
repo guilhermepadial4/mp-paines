@@ -1,4 +1,4 @@
-import './Header.scss';
+import './header.scss';
 
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
