@@ -40,6 +40,10 @@
 }
 
 .btn-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
   font-size: 1.2rem;
   color: $neutral-100;
 

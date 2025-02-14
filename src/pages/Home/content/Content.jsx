@@ -1,5 +1,7 @@
 import './content.scss';
 
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+
 import Banner from '../../../assets/mp-banner.png';
 import PeopleContent from '../../../assets/people-content.png';
 import { Location } from './Location/Location';
@@ -14,7 +16,9 @@ export function Content() {
 
       <ProductCarousel />
 
-      <button className="btn-line">Conheça nossa linha completa de produtos</button>
+      <button className="btn-line">
+        Conheça nossa linha completa de produtos <FaRegArrowAltCircleRight />
+      </button>
 
       <section className="about-company">
         <div className="about-image">
