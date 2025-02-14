@@ -22,38 +22,22 @@ export function Header() {
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
         <ul className="nav-links">
           <li>
-            <Link
-              to="/"
-              className={currentPath === '/' ? 'active' : ''}
-              onClick={() => setMenuOpen(false)}
-            >
+            <Link to="/" className={currentPath === '/' ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               Início
             </Link>
           </li>
           <li>
-            <Link
-              to="/produtos"
-              className={currentPath === '/produtos' ? 'active' : ''}
-              onClick={() => setMenuOpen(false)}
-            >
+            <Link to="/produtos" className={currentPath === '/produtos' ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               Produtos
             </Link>
           </li>
           <li>
-            <Link
-              to="/servicos"
-              className={currentPath === '/servicos' ? 'active' : ''}
-              onClick={() => setMenuOpen(false)}
-            >
-              Serviços
+            <Link to="/sobre" className={currentPath === '/sobre' ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+              Sobre nós
             </Link>
           </li>
           <li>
-            <Link
-              to="/contato"
-              className={currentPath === '/contato' ? 'active' : ''}
-              onClick={() => setMenuOpen(false)}
-            >
+            <Link to="/contato" className={currentPath === '/contato' ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               Contato
             </Link>
           </li>

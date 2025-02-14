@@ -1,0 +1,280 @@
+@import '../../../styles/variables.scss';
+
+.about-us {
+  background-color: $background-light;
+
+  padding: 40px 36px;
+
+  .about-us-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+
+    .about-us-intro-text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      max-width: 600px;
+
+      h1 {
+        font-size: 2.5rem;
+        color: $neutral-900;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: $neutral-700;
+      }
+    }
+
+    .about-us-intro-logo img {
+      max-width: 200px;
+    }
+  }
+
+  .our-mission {
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: $neutral-900;
+
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 20px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        width: 30%;
+        min-height: 300px;
+        height: auto;
+
+        background-color: $surface;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        border-radius: 10px;
+
+        padding: 20px;
+
+        overflow: hidden;
+
+        h3 {
+          font-size: 1.5rem;
+          color: $primary-main;
+
+          margin-bottom: 10px;
+
+          flex-shrink: 0;
+        }
+
+        p {
+          flex-grow: 1;
+
+          font-size: 1rem;
+          color: $neutral-800;
+          text-overflow: ellipsis;
+
+          overflow: hidden;
+        }
+
+        ul {
+          flex-grow: 1;
+
+          list-style-type: none;
+
+          text-overflow: ellipsis;
+
+          padding: 0;
+
+          overflow: hidden;
+
+          li {
+            font-size: 1rem;
+            color: $neutral-800;
+          }
+        }
+
+        .card-icon {
+          font-size: 3rem;
+          color: $primary-main;
+
+          margin-bottom: 20px;
+
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  .areas-of-activity {
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: $neutral-900;
+
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 20px;
+
+      .area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        width: 30%;
+        min-height: 300px;
+        height: auto;
+
+        background-color: $surface;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        border-radius: 10px;
+
+        padding: 20px;
+
+        overflow: hidden;
+
+        h3 {
+          font-size: 1.5rem;
+          color: $primary-main;
+
+          margin-top: 20px;
+
+          flex-shrink: 0;
+        }
+
+        p {
+          flex-grow: 1;
+
+          font-size: 1rem;
+          color: $neutral-800;
+          text-overflow: ellipsis;
+
+          overflow: hidden;
+        }
+
+        svg {
+          font-size: 3rem;
+          color: $primary-main;
+
+          margin-bottom: 20px;
+
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .about-us-intro {
+      flex-direction: column;
+
+      text-align: center;
+    }
+
+    .about-us-intro-text {
+      max-width: 100%;
+
+      padding: 0 20px;
+    }
+
+    .about-us-intro-logo img {
+      max-width: 150px;
+    }
+
+    .areas-of-activity .card-container {
+      .area {
+        width: 45%;
+      }
+    }
+
+    .our-mission .card-container {
+      .card {
+        width: 45%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-us-intro {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-us-intro-text {
+      max-width: 100%;
+
+      padding: 0 20px;
+    }
+
+    .about-us-intro-logo img {
+      max-width: 120px;
+    }
+
+    .areas-of-activity .card-container {
+      .area {
+        width: 100%;
+        height: auto;
+
+        margin-bottom: 20px;
+      }
+    }
+
+    .our-mission .card-container {
+      .card {
+        width: 100%;
+        height: auto;
+
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-us-intro-text {
+      padding: 0 10px;
+    }
+
+    .about-us-intro-logo img {
+      max-width: 100px;
+    }
+
+    .our-mission .card-container {
+      .card {
+        width: 100%;
+      }
+    }
+
+    .areas-of-activity .card-container {
+      .area {
+        width: 100%;
+      }
+    }
+  }
+}
