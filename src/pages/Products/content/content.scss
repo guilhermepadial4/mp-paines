@@ -1,1 +1,154 @@
 @use '../../../styles/variables.scss' as *;
+
+.products-page {
+  text-align: center;
+
+  background-color: $background-light;
+
+  padding: 40px 20px;
+
+  overflow: hidden;
+
+  .slick-track {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.products-title {
+  font-size: 2.5rem;
+  color: $primary-main;
+
+  margin-bottom: 30px;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-color: $surface;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-radius: 8px;
+
+  padding: 20px;
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.product-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+  margin: 0 auto;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: $neutral-700;
+
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  @media (max-width: 1024px) {
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+}
+
+.btn {
+  color: $neutral-100;
+
+  background-color: $primary-main;
+
+  border: none;
+  border-radius: 4px;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $primary-500;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 0.95rem;
+
+    padding: 8px 18px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+
+    padding: 7px 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+
+    padding: 6px 12px;
+  }
+}
+
+.slick-dots {
+  bottom: 10px;
+
+  li button:before {
+    color: $primary-600;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-image {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-page {
+    padding: 20px 10px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-image {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-image {
+    max-width: 150px;
+  }
+}
