@@ -1,6 +1,7 @@
 import './content.scss';
 
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import Banner from '../../../assets/mp-banner.png';
 import PeopleContent from '../../../assets/people-content.png';
@@ -16,9 +17,11 @@ export function Content() {
 
       <ProductCarousel />
 
-      <button className="btn-line">
-        Conheça nossa linha completa de produtos <FaRegArrowAltCircleRight />
-      </button>
+      <Link to="/produtos">
+        <button className="btn-line">
+          Conheça nossa linha completa de produtos <FaRegArrowAltCircleRight />
+        </button>
+      </Link>
 
       <section className="about-company">
         <div className="about-image">

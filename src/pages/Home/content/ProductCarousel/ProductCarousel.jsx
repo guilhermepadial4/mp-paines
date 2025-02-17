@@ -1,5 +1,6 @@
 import './productcarousel.scss';
 
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 import QuadroDistruibuicao from '../../../../assets/quadro-distribuicao.png';
@@ -7,7 +8,7 @@ import QuadroDistruibuicao from '../../../../assets/quadro-distribuicao.png';
 const products = [
   {
     id: 1,
-    image: QuadroDistruibuicao, 
+    image: QuadroDistruibuicao,
     description: 'Quadro elétrico de alta performance',
   },
   {
@@ -35,7 +36,7 @@ const ProductCarousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, 
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -59,7 +60,9 @@ const ProductCarousel = () => {
           <div key={product.id} className="product-card">
             <img src={product.image} alt={`Produto ${product.id}`} className="product-image" />
             <p className="product-description">{product.description}</p>
-            <button className="btn btn-primary">Conhecer</button>
+            <Link to="/produtos">
+              <button className="btn btn-primary">Conhecer</button>
+            </Link>
           </div>
         ))}
       </Slider>

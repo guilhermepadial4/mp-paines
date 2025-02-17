@@ -2,7 +2,6 @@ import './footer.scss';
 
 import { FaWhatsapp } from 'react-icons/fa';
 import { FiFacebook, FiInstagram, FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
 
 import ArrowUnder from '../../assets/arrow_under.svg';
 import Logo from '../../assets/logo.png';
@@ -74,7 +73,6 @@ export function Footer() {
 
         <div className="footer-section logo-politica">
           <img src={Logo} alt="Logo da Empresa MP Painéis" />
-          <Link to="/">Política de Privacidade</Link>
           <img className="secure-site" src={SecureSite} alt="Selo de Site Seguro" />
         </div>
       </div>
