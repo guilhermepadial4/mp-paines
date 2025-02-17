@@ -3,28 +3,31 @@ import './productcarousel.scss';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
-import QuadroDistruibuicao from '../../../../assets/quadro-distribuicao.png';
+import Service00 from '../../../../assets/service00.png';
+import Service01 from '../../../../assets/service01.png';
+import Service02 from '../../../../assets/service02.png';
+import Service03 from '../../../../assets/service03.png';
 
 const products = [
   {
     id: 1,
-    image: QuadroDistruibuicao,
-    description: 'Quadro elétrico de alta performance',
+    image: Service00,
+    description: 'Descrição produto',
   },
   {
     id: 2,
-    image: QuadroDistruibuicao,
-    description: 'Sistema de distribuição de energia eficiente',
+    image: Service01,
+    description: 'Descrição produto',
   },
   {
     id: 3,
-    image: QuadroDistruibuicao,
-    description: 'Controle avançado para sistemas industriais',
+    image: Service02,
+    description: 'Descrição produto',
   },
   {
     id: 4,
-    image: QuadroDistruibuicao,
-    description: 'Proteção elétrica para ambientes exigentes',
+    image: Service03,
+    description: 'Descrição produto',
   },
 ];
 

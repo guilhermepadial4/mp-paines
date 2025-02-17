@@ -14,18 +14,25 @@
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+
+  min-height: 280px;
 
   background-color: $surface;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   border-radius: 8px;
 
-  margin: 0 25px;
-
   padding: 20px;
 
   transition: transform 0.3s ease;
+
+  overflow: hidden;
+
+  height: auto;
 
   &:hover {
     transform: scale(1.05);
@@ -33,22 +40,30 @@
 }
 
 .product-image {
+  flex-shrink: 0;
+
   width: 100%;
-  max-width: 250px;
-  height: auto;
+  max-height: 150px;
 
   object-fit: cover;
 
   border-radius: 8px;
-
-  margin: 0 auto;
 }
 
 .product-description {
-  font-size: 1rem;
+  display: -webkit-box;
+  flex-grow: 1;
+
+  font-size: 0.9rem;
   color: $neutral-700;
 
-  margin-top: 10px;
+  margin: 10px 0;
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
 }
 
 .btn {
@@ -59,7 +74,7 @@
   border: none;
   border-radius: 4px;
 
-  margin-top: 15px;
+  margin-top: auto;
 
   padding: 10px 20px;
 
@@ -72,74 +87,30 @@
   }
 }
 
-.slick-dots {
-  bottom: 10px;
-
-  li button:before {
-    color: $primary-600;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .product-card {
-    margin: 0 15px;
-
     padding: 15px;
   }
 
   .product-image {
-    max-width: 200px;
+    max-height: 200px;
   }
 
   .product-description {
-    font-size: 0.95rem;
-  }
-
-  .btn {
-    font-size: 0.9rem;
-
-    padding: 8px 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .products-carousel {
-    padding: 0 10px;
-  }
-
-  .product-card {
-    margin: 0 10px;
-
-    padding: 10px;
-  }
-
-  .product-image {
-    max-width: 180px;
-  }
-
-  .product-description {
-    font-size: 0.9rem;
-  }
-
-  .btn {
     font-size: 0.85rem;
-
-    padding: 7px 12px;
   }
 }
 
 @media (max-width: 480px) {
+  .product-card {
+    padding: 10px;
+  }
+
   .product-image {
-    max-width: 150px;
+    max-height: 200px;
   }
 
   .product-description {
-    font-size: 0.85rem;
-  }
-
-  .btn {
     font-size: 0.8rem;
-
-    padding: 5px 10px;
   }
 }
