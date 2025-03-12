@@ -3,7 +3,7 @@ import './content.scss';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import Banner from '../../../assets/mp-banner.png';
+import Banner from '../../../assets/banner.png';
 import PeopleContent from '../../../assets/people-content.png';
 import { Location } from './Location/Location';
 import ProductCarousel from './ProductCarousel/ProductCarousel';
