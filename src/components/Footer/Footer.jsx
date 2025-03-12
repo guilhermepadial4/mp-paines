@@ -18,7 +18,6 @@ export function Footer() {
         <div className="footer-section atendimento">
           <h3>Atendimento</h3>
           <p>Seg a Sex: 08:00 - 17:00</p>
-          <p>Sab: 08:00 - 16:00</p>
           <ul>
             <li>
               <a href="tel:+551127260281" target="_blank" rel="noopener noreferrer">
