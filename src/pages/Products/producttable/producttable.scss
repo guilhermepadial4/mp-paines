@@ -1,0 +1,94 @@
+@use '../../../styles/variables.scss' as *;
+
+.product-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px $shadow-light;
+  background: $surface;
+  padding: 15px;
+}
+
+/* Estilização padrão da tabela */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid $neutral-300;
+  }
+
+  th {
+    background-color: $primary-500;
+    color: $neutral-100;
+    font-weight: 600;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: $neutral-100;
+  }
+
+  tbody tr:hover {
+    background-color: $primary-100;
+  }
+}
+
+/* Scroll horizontal para telas médias */
+@media (max-width: 768px) {
+  .product-table-container {
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .product-table {
+    min-width: 600px; /* Evita que a tabela encolha demais */
+  }
+}
+
+/* Layout em cards para telas pequenas */
+@media (max-width: 600px) {
+  .product-table {
+    display: block;
+    border: none;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+      background: $neutral-100;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px $shadow-light;
+    }
+
+    td {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-bottom: none;
+      font-size: 14px;
+    }
+
+    td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: $primary-500;
+      flex: 1;
+      margin-right: 8px;
+    }
+  }
+}
