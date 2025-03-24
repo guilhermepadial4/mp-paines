@@ -1,4 +1,4 @@
-import './ProductTable.scss';
+import './producttable.scss';
 
 export const ProductTable = () => {
   const products = [
