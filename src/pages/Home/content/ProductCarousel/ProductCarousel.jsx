@@ -3,31 +3,31 @@ import './productcarousel.scss';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
-import Service00 from '../../../../assets/service00.png';
-import Service01 from '../../../../assets/service01.png';
-import Service02 from '../../../../assets/service02.png';
-import Service03 from '../../../../assets/service03.png';
+import Service01 from '../../../../assets/images/service01.jpg';
+import Service02 from '../../../../assets/images/service04.jpg';
+import Service03 from '../../../../assets/images/service05.jpg';
+import Service04 from '../../../../assets/images/service06.jpg';
 
 const products = [
   {
     id: 1,
-    image: Service00,
-    description: 'Descrição produto',
+    image: Service01,
+    description: 'CAIXAS METALICAS DE MEDIÇÃO, DE BARRAMENTO DISTRIBIÇÃO E SECCIONAMENTO',
   },
   {
     id: 2,
-    image: Service01,
-    description: 'Descrição produto',
+    image: Service02,
+    description: 'CAIXAS METALICAS DE MEDIÇÃO (MEC - II, MEC III, MEC IV, MEC VI, MEC IX, MEC XII, MEC XVI) PADRÃO ENEL / EDP BANDEIRANTES',
   },
   {
     id: 3,
-    image: Service02,
-    description: 'Descrição produto',
+    image: Service03,
+    description: 'CAIXAS METALICAS DE MEDIÇÃO (CL - I, CL II, CL III) PADRÃO ENEL / EDP BANDEIRANTES',
   },
   {
     id: 4,
-    image: Service03,
-    description: 'Descrição produto',
+    image: Service04,
+    description: 'QUADRO DE DISTRIBUIÇÃO DE EMBUTIR LINHA INDUSTRIAL',
   },
 ];
 
