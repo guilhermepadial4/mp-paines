@@ -29,7 +29,7 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/produtos" className={currentPath === '/produtos' ? 'active' : ''} onClick={() => setMenuOpen(false)}>
+            <Link to="/produtos" className={currentPath.startsWith('/produtos') ? 'active' : ''} onClick={() => setMenuOpen(false)}>
               Produtos
             </Link>
           </li>
