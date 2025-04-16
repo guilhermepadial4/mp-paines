@@ -120,3 +120,53 @@
 
   padding: 4rem 2rem;
 }
+
+.contact-attendant {
+  text-align: center;
+  color: white;
+
+  background-color: #00687b;
+
+  padding: 3rem 1rem;
+
+  .contact-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2rem;
+
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      margin-bottom: 2rem;
+    }
+
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+
+      background-color: #25d366;
+
+      border-radius: 8px;
+
+      padding: 0.75rem 1.5rem;
+
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #1ebe5d;
+      }
+    }
+  }
+}

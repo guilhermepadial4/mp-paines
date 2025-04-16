@@ -1,5 +1,6 @@
 import './productdetails.scss';
 
+import { FaWhatsapp } from 'react-icons/fa';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import Service00 from '../../../assets/images/service01.jpg';
@@ -137,6 +138,23 @@ export function ProductDetails() {
           </div>
         </div>
       </section>
+
+      <section className="contact-attendant">
+        <div className="contact-content">
+          <h2>Fale com um Especialista</h2>
+          <p>Está com dúvidas sobre este produto? Nosso time está pronto para te atender agora mesmo!</p>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5511973040054&text=Olá! Tenho interesse em um produto e gostaria de mais informações.&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-button"
+          >
+            <FaWhatsapp size={24} />
+            Falar no WhatsApp
+          </a>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
