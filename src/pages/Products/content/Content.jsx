@@ -20,70 +20,70 @@ const products = [
   {
     id: 1,
     image: Service00,
-    description: 'CAIXAS METALICAS DE MEDIÇÃO, DE BARRAMENTO DISTRIBIÇÃO E SECCIONAMENTO',
+    name: 'CAIXA METÁLICA DE MEDIÇÃO',
   },
   {
     id: 2,
     image: Service01,
-    description: 'QUADRO DE DISTRIBUIÇÃO COMPACTO (QDC - 05, QDC - 10, QDC - 15, QDC - 21 - COMPACTO) PADRÃO ENEL / EDP BANDEIRANTES',
+    name: 'QUADRO DE DISTRIBUIÇÃO COMPACTO',
   },
   {
     id: 3,
     image: Service02,
-    description: 'QUADRO DE DISTRIBUIÇÃO COMPACTO (QDC - 05, QDC - 10, QDC - 15, QDC - 21 - COMPACTO) PADRÃO ENEL / EDP BANDEIRANTES',
+    name: 'QUADRO DE DISTRIBUIÇÃO COMPACTO',
   },
   {
     id: 4,
     image: Service03,
-    description: 'QUADRO DE DISTRIBUIÇÃO COMPACTO (QDC - 05, QDC - 10, QDC - 15, QDC - 21 - COMPACTO) PADRÃO ENEL / EDP BANDEIRANTES',
+    name: 'QUADRO DE DISTRIBUIÇÃO COMPACTO',
   },
 
   {
     id: 5,
     image: Service04,
-    description: 'CAIXAS METALICAS DE MEDIÇÃO (MEC - II, MEC III, MEC IV, MEC VI, MEC IX, MEC XII, MEC XVI) PADRÃO ENEL / EDP BANDEIRANTES',
+    name: 'CAIXAS METALICAS DE MEDIÇÃO',
   },
 
   {
     id: 6,
     image: Service05,
-    description: 'CAIXAS METALICAS DE MEDIÇÃO (CL - I, CL II, CL III) PADRÃO ENEL / EDP BANDEIRANTES',
+    name: 'CAIXAS METALICAS DE MEDIÇÃO',
   },
 
   {
     id: 7,
     image: Service06,
-    description: 'QUADRO DE DISTRIBUIÇÃO DE EMBUTIR LINHA INDUSTRIAL',
+    name: 'QUADRO DE DISTRIBUIÇÃO',
   },
 
   {
     id: 8,
     image: Service07,
-    description: 'QUADRO DE DISTRIBUIÇÃO DE EMBUTIR LINHA INDUSTRIAL',
+    name: 'QUADRO DE DISTRIBUIÇÃO',
   },
 
   {
     id: 9,
     image: Service08,
-    description: 'QUADRO DE DISTRIBUIÇÃO DE EMBUTIR LINHA RESIDENCIAL',
+    name: 'QUADRO DE DISTRIBUIÇÃO',
   },
 
   {
     id: 10,
     image: Service09,
-    description: 'QUADRO DE DISTRIBUIÇÃO DE EMBUTIR LINHA RESIDENCIAL',
+    name: 'QUADRO DE DISTRIBUIÇÃO',
   },
 
   {
     id: 11,
     image: Service10,
-    description: 'PAINÉIS AUTOPORTANTE DE BAIXA TENSÃO',
+    name: 'PAINÉIS AUTOPORTANTE',
   },
 
   {
     id: 12,
     image: Service11,
-    description: 'QUADRO DE BOMBAS RECALQUE / PISCINA / ESGOTO / DRENAGEM',
+    name: 'QUADRO DE BOMBAS RECALQUE',
   },
 ];
 
@@ -119,7 +119,7 @@ export function Content() {
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <img src={product.image} alt={`Produto ${product.id}`} className="product-image" />
-            <p className="product-description">{product.description}</p>
+            <p className="product-description">{product.name}</p>
             <a
               href="https://api.whatsapp.com/send/?phone=5511973040054&text&type=phone_number&app_absent=0"
               target="_blank"
